@@ -13,9 +13,10 @@ export default function App() {
       {
         toggle && (
           <View>
-           <Text>home</Text> 
+           <Text>Home</Text> 
            <Text>About</Text> 
            <Text>Contact</Text> 
+           
           
 
           </View>
