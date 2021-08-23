@@ -12,13 +12,10 @@ export default function App() {
       <Button title="Click on me" onPress={() => setToggle(!toggle)} />
       {
         toggle && (
-          <View>
-           <Text>Home</Text> 
-           <Text>About</Text> 
-           <Text>Contact</Text> 
-           
-          
-
+          <View style={styles.containerTwo}>
+           <Text style={styles.home}>Home</Text> 
+           <Text style={styles.about}>About</Text> 
+           <Text style={styles.contact}>Contact</Text> 
           </View>
         )
       }
@@ -34,4 +31,24 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  home: {
+    color: "blue",
+    flex: 1,
+    fontSize: 15,
+    backgroundColor: "orange"
+  },
+  about: {
+    flex: 2,
+    backgroundColor: "yellow"
+  },
+  contact: {
+    flex: 3,
+    backgroundColor: "green"
+  },
+  containerTwo: {
+    marginTop: 10,
+    height: 200,
+    width: 200,
+    backgroundColor: "red",
+  }
 });
